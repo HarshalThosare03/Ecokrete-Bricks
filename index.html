@@ -8,18 +8,20 @@
 </head>
 <body>
     <header>
-        <div class="logo">
-        <img src="logo.jpeg" alt="K-Bricks Logo" class="circular-logo">ECOKRETE-BRICKS
-	</div>
-        <nav>
-            <ul>
-                <li><a href="#hero" >Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#products">Our Product</a></li>
-                <li><a href="#contacts">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="logo">
+        <img src="logo.jpeg" alt="K-Bricks Logo" class="circular-logo"> ECOKRETE-BRICKS
+    </div>
+    <nav>
+        <div class="menu-toggle" id="mobile-menu">&#9776;</div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#products">Our Product</a></li>
+            <li><a href="#contacts">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
 	
 	<div class="top-slogan">
     	Meet the world’s most sustainable, low carbon brick
@@ -129,5 +131,15 @@
         <p>&copy; 2025 K-Bricks. All Rights Reserved.</p>
     </footer>
 </section> -->
+<script>
+    const menuToggle = document.getElementById('mobile-menu');
+    const navLinks = document.getElementById('nav-links');
+
+    menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+</script>
+
+	
 </body>
 </html>
