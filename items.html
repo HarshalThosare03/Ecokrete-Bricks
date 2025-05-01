@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K-Bricks Items</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .items-section {
+            padding: 60px 10%;
+            background-color: #f9f9f9;
+        }
+
+        .items-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .item-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .item-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .item-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .item-name {
+            font-size: 1.1em;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+	
+	.slogan-section {
+    margin: 60px 10% 40px;
+    padding: 20px;
+    background-color: #eaf6ef;
+    border-left: 5px solid #2ecc71;
+    border-radius: 8px;
+}
+
+.slogan-section h2 {
+    color: #27ae60;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+.slogan-section ul {
+    list-style: disc inside;
+    line-height: 1.6;
+    color: #2c3e50;
+}
+
+.circular-logo {
+    height: 70px;
+    width: 70px;
+    border-radius: 40%;
+    object-fit: cover;
+    border: 2px solid #4CAF50;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    margin-left: 10px;
+    vertical-align: middle;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.jpeg" alt="K-Bricks Logo" class="circular-logo">ECOKRETE-BRICKS
+        </div>
+	<nav>
+            <ul>
+                <li><a href="index.html" >Home</a></li>
+            </ul>
+        </nav>
+    </header>
+	<section class="slogan-section">
+    <h2>Sustainable by Design</h2>
+    <ul>
+        <li>Made from 70-75% recycled construction and demolition waste, K-Bricks turn debris into durable, eco-friendly building blocks.</li>
+        <li>Low carbon footprint with energy-efficient production</li>
+        <li>Supports a circular economy – waste in, bricks out</li>
+        <li>Locally sourced materials to cut transport emissions</li>
+        <li>Safe, non-toxic & thermally efficient</li>
+        <li>Compliant with green building standards like IGBC & LEED</li>
+    </ul>
+	</section>
+
+    <section class="items-section">
+        <h2>Our K-Brick Items</h2>
+        <div class="items-grid">
+            <div class="item-card">
+                <img src="p1.jpeg" alt="Standard Eco Brick">
+                <p class="item-name">Green Brick</p>
+            </div>
+            <div class="item-card">
+                <img src="p2.jpeg" alt="Insulated Green Brick">
+                <p class="item-name">White Brick</p>
+            </div>
+            <div class="item-card">
+                <img src="p3.jpeg" alt="Urban Finish Brick">
+                <p class="item-name">Yellow Brick</p>
+            </div>
+            <div class="item-card">
+                <img src="p4.jpeg" alt="High Strength Brick">
+                <p class="item-name">Sandy Brick</p>
+            </div>
+            <div class="item-card">
+                <img src="p5.jpeg" alt="Decorative EarthTone Brick">
+                <p class="item-name">Red Brick</p>
+            </div>
+		<div class="item-card">
+                <img src="p6.jpeg" alt="Decorative EarthTone Brick">
+                <p class="item-name">Brown Brick</p>
+            </div>
+		<div class="item-card">
+                <img src="p7.jpeg" alt="Decorative EarthTone Brick">
+                <p class="item-name">Grey Brick</p>
+            </div>
+		<div class="item-card">
+                <img src="p8.jpeg" alt="Decorative EarthTone Brick">
+                <p class="item-name">Black Brick</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
