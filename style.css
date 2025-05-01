@@ -1,4 +1,42 @@
 /* Global Styles */
+/* Base styles for desktop */
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+}
+
+/* Responsive adjustments for tablets and phones */
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .text-content h1 {
+        font-size: 1.8rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .team-members {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .member img {
+        width: 150px;
+    }
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
 * {
     margin: 0;
     padding: 0;
